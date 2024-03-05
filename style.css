@@ -1,0 +1,91 @@
+* {
+    color: white;
+}
+
+#card {
+   /* border: 5px solid black; */
+    width: 350px;
+    height: 450px;
+    position: relative;
+    top: 50vh;
+    left: 50vw;
+    transform: translate(-50%, -50%);
+    overflow: hidden;
+   
+}
+
+#card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+
+}  
+
+#card #save {
+    border-radius: 40px;
+    height: 50px;
+    width: 80px;
+    line-height: 20px;
+    text-align: center;
+    background-color: red;
+    position: absolute;
+    top: -50px;
+    right: 30px;
+    transition: transform .5s;
+    
+}
+
+/* SPOSTAMENTO SAVE IN ALTO */
+
+#card:hover #save {
+    
+    transform: translateY(170%);
+    cursor: pointer;
+}
+
+
+
+#bottom-text {
+    position: absolute;
+    bottom: -100px;
+    width: 100%;
+    text-align: center;
+    border: 5px black solid;
+    transition: transform .5s;
+}
+
+#bottom-text ion-icon {
+    border: 3px solid red;
+}
+
+/* SPOSTAMENTO TESTO IN BASSO */
+
+#card:hover #bottom-text {
+    transform: translateY(-170%);
+} 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
