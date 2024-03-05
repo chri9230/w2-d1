@@ -59,7 +59,7 @@
     bottom: -100px;
     padding: 1em;
     text-align: center;
-    
+    font-size: 2ch;
     transition: transform .5s;
     display: flex;
     justify-content: space-around;
@@ -67,9 +67,15 @@
 
 #bottom-text div {
     
-    margin: .5em;
+    margin: .4em;
     background-color: #eaeae9;
-    color: black;
+    opacity: 0.7;
+    cursor: pointer;
+}
+
+#bottom-text div:hover {
+    background-color: white;
+    opacity: 1;
 }
 
 #long-radius {
@@ -79,7 +85,14 @@
     display: flex;
     align-items: center;
     justify-content: space-evenly;
+
 }
+
+#long-radius ion-icon {
+    transform: rotate(315deg);
+    margin-right: 0;
+}
+
 
 .tondo {
     width: 40px;
@@ -94,7 +107,6 @@
     display: inline-block;
     height: 20px;
     width: 20px;
-    border: 3px solid black;
 }
 
 /* SPOSTAMENTO TESTO IN BASSO */
